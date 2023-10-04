@@ -26,7 +26,7 @@ class FilamentRangeFieldServiceProvider extends PackageServiceProvider
     public function packageBooted(): void
     {
         FilamentAsset::register([
-            Css::make('custom-stylesheet', __DIR__ . '/../../resources/css/filament-forms-range-component.min.css'),
+            Css::make('custom-stylesheet', __DIR__ . '/../resources/css/filament-forms-range-component.min.css'),
         ], package: 'danpalmieri/filament-range-field');
     }
 }
