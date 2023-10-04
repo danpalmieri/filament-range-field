@@ -2,7 +2,7 @@
 
 namespace Yepsua\Filament;
 
-use Filament\Facades\Filament;
+use Filament\Facades\FilamentAsset;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
@@ -24,7 +24,7 @@ class FilamentRangeFieldServiceProvider extends PackageServiceProvider
 
     public function packageBooted(): void
     {
-        Filament::registerStyles([
+        FilamentAsset::registerStyles([
             asset('vendor/filament-range-field/css/filament-forms-range-component.min.css'),
         ]);
     }
